@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import logo from '../imagens/logo.jpeg'; // Caminho para a sua imagem de logo
 
 function Header() {
   return (
     <header className="header">
-      <h1>Victor Mendes</h1>
+      <img src={logo} alt="Logo Victor Mendes" className="logo" />
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
@@ -18,3 +19,4 @@ function Header() {
 }
 
 export default Header;
+
