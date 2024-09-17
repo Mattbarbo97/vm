@@ -6,6 +6,12 @@
     padding: 20px;
   }
   
+  .logo {
+    height: 4px; /* Tamanho inicial da logo */
+    max-width: 7%;
+    height: auto; /* Para manter a proporção */
+  }
+  
   .header h1 {
     color: #ff0000;
   }
@@ -24,9 +30,20 @@
     text-decoration: none;
   }
   
+  /* Responsividade para telas menores */
   @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
     .header ul {
       flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .logo {
+      height: 60px; /* Tamanho menor para telas pequenas */
     }
   }
   
