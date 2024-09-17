@@ -1,0 +1,71 @@
+.home {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .hero:hover {
+    transform: scale(1.02);
+  }
+  
+  .cta-buttons {
+    margin-top: 20px;
+  }
+  
+  .cta-buttons a {
+    margin: 10px;
+    text-decoration: none;
+  }
+  
+  button {
+    background-color: #FF007F;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px #FF007F, 0 0 20px #FF007F;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #cc005f;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px #FF007F, 0 0 30px #FF007F;
+  }
+  
+  /* Nova Seção Neon */
+  .neon-section {
+    padding: 80px 20px;
+    background-color: #1A1A1A;
+    text-align: center;
+  }
+  
+  .neon-section img {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    border: 2px solid #00FFFF;
+    box-shadow: 0 0 20px #00FFFF, 0 0 30px #9400D3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .neon-section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px #00FFFF, 0 0 60px #9400D3;
+  }
+  

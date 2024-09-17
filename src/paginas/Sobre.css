@@ -1,0 +1,16 @@
+.sobre {
+    padding: 50px 20px;
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .sobre h2 {
+    color: #ff0000;
+  }
+  
+  @media (max-width: 768px) {
+    .sobre {
+      padding: 20px;
+    }
+  }
+  

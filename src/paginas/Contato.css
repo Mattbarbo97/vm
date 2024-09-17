@@ -1,0 +1,27 @@
+.contato {
+    padding: 50px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .contato h2 {
+    color: #ff0000;
+  }
+  
+  .cta-buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #ff0000;
+    padding: 15px 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .cta-buttons a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
