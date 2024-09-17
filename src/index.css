@@ -1,0 +1,146 @@
+/* Estilo Global */
+body {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease;
+}
+
+/* Cabeçalho */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(20, 20, 20, 0.9);
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.header h1 {
+  color: #FF007F; /* Rosa Neon */
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+}
+
+.header ul li {
+  margin-right: 20px;
+}
+
+.header ul li a {
+  color: #00FFFF; /* Azul Neon */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header ul li a:hover {
+  color: #FF007F;
+}
+
+/* Seção Hero */
+.hero {
+  background-image: linear-gradient(135deg, #9400D3, #1A1A1A);
+  padding: 150px 20px;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #00FFFF; /* Azul Neon */
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero p {
+  color: #B3B3B3;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.hero button {
+  background-color: #FF007F;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #FF007F, 0 0 20px #FF007F;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #cc005f;
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #FF007F, 0 0 30px #FF007F;
+}
+
+/* Seção com Imagens em Neon */
+.neon-section {
+  padding: 80px 20px;
+  background-color: #1A1A1A;
+  text-align: center;
+}
+
+.neon-section img {
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  border: 2px solid #00FFFF;
+  box-shadow: 0 0 20px #00FFFF, 0 0 30px #9400D3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neon-section img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px #00FFFF, 0 0 60px #9400D3;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(20, 20, 20, 0.9);
+  padding: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+footer p {
+  color: #00FFFF;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .header ul {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero button {
+    padding: 10px 20px;
+  }
+}
