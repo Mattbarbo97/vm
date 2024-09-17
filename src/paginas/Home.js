@@ -10,7 +10,7 @@ function Home() {
       {/* Seção com Imagens Inspiradas no Estilo Blade Runner */}
       <section className="neon-section">
         <h2>Preparador físico Victor Mendes</h2>
-        <p>Confira algumas imagens da ultima participação De Victor no Muscle Contest.</p>
+        <p>Confira algumas imagens da última participação De Victor no Muscle Contest.</p>
         <div className="image-gallery">
           <img src={vic1} alt="Victor 1" />
           <img src={vic2} alt="Victor 2" />
