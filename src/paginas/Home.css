@@ -6,27 +6,73 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
   }
   
-  .hero {
+  /* Seção Neon - Imagens */
+  .neon-section {
+    padding: 80px 20px;
+    background-color: #1A1A1A;
     text-align: center;
-    padding: 50px;
-    background: rgba(0, 0, 0, 0.85);
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
   }
   
-  .hero:hover {
-    transform: scale(1.02);
+  .neon-section img {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    border: 2px solid #00FFFF;
+    box-shadow: 0 0 20px #00FFFF, 0 0 30px #9400D3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .neon-section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px #00FFFF, 0 0 60px #9400D3;
+  }
+  
+  /* Seção de História */
+  .history-section {
+    padding: 60px 20px;
+    background-color: #0D0D0D;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .history-section h2 {
+    font-size: 2.5rem;
+    color: #00FFFF;
+    text-shadow: 2px 2px 10px rgba(0, 255, 255, 0.8);
+  }
+  
+  .history-section p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    line-height: 1.5;
+    text-shadow: 2px 2px 10px rgba(255, 0, 127, 0.7);
+  }
+  
+  /* Seção de Botões de CTA */
+  .cta-section {
+    padding: 40px 20px;
+    background-color: #1A1A1A;
+    text-align: center;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+    color: #FF007F;
+    text-shadow: 2px 2px 10px rgba(255, 0, 127, 0.7);
   }
   
   .cta-buttons {
     margin-top: 20px;
+    display: flex; 
+    justify-content: center; 
+    gap: 20px;
+    flex-wrap: wrap;
   }
   
   .cta-buttons a {
-    margin: 10px;
     text-decoration: none;
   }
   
@@ -48,24 +94,15 @@
     box-shadow: 0 0 20px #FF007F, 0 0 30px #FF007F;
   }
   
-  /* Nova Seção Neon */
-  .neon-section {
-    padding: 80px 20px;
-    background-color: #1A1A1A;
-    text-align: center;
-  }
+  @media (max-width: 768px) {
+    .cta-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
   
-  .neon-section img {
-    width: 300px;
-    height: auto;
-    margin: 20px;
-    border: 2px solid #00FFFF;
-    box-shadow: 0 0 20px #00FFFF, 0 0 30px #9400D3;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .neon-section img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 40px #00FFFF, 0 0 60px #9400D3;
+    .neon-section img {
+      width: 100%;
+      max-width: 300px;
+    }
   }
   
