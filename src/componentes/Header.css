@@ -7,9 +7,8 @@
   }
   
   .logo {
-    height: 4px; /* Tamanho inicial da logo */
-    max-width: 7%;
-    height: auto; /* Para manter a proporção */
+    max-width: 100px; /* Definimos uma largura máxima para controlar o tamanho inicial */
+    height: auto; /* Isso garante que a proporção da logo seja mantida */
   }
   
   .header h1 {
@@ -43,7 +42,8 @@
     }
   
     .logo {
-      height: 8px; /* Tamanho menor para telas pequenas */
+      max-width: 80px; /* Diminuímos o tamanho para telas menores */
+      height: auto; /* Mantemos a proporção correta */
     }
   }
   
